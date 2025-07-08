@@ -36,5 +36,17 @@ A responsive movie search web application built with **React.js**. Users can sea
 
 ## 📸 Screenshots
 
+Home Page
+![screenshot](https://github.com/Harsha125-art/Movies-website-using-React-JS/blob/961011887b69881da704369fc9ef43df7924f5a2/HomePage.png)
+
+Movies List
+![screenshot](https://github.com/Harsha125-art/Movies-website-using-React-JS/blob/961011887b69881da704369fc9ef43df7924f5a2/MoviesList.png)
+
+Movies Details
+![screenshot](https://github.com/Harsha125-art/Movies-website-using-React-JS/blob/961011887b69881da704369fc9ef43df7924f5a2/Movies-detail.png)
+
+Watch List
+![screenshot](https://github.com/Harsha125-art/Movies-website-using-React-JS/blob/961011887b69881da704369fc9ef43df7924f5a2/watchList.png)
+
 
 
