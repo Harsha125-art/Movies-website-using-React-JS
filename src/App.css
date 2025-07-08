@@ -1,0 +1,251 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0f29;
+  font-family: sans-serif;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* or space-around for more spacing */
+  background-color: #77dfab;
+  border: 3px solid navy;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.Home, .Watchlist {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.navlink {
+  font-size: 18px;
+  color: navy;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navlink:hover {
+  color: rgb(67, 67, 159);
+}
+
+.nav-logo {
+  height: 40px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.nav-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto; /* center horizontally */
+  flex: 1;
+  justify-content: center;
+}
+.search-input {
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid navy;
+  font-size: 14px;
+}
+
+.search-button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: navy;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #333366;
+}
+
+.movies-container {
+  padding: 0;
+  background-color: #0a0f29;
+}
+
+.movies-title {
+  font-size: 30px;
+  text-align: center;
+  color: #77dfab;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.Movies-box {
+  background-color: #0a0f29;
+  margin: 0;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+.movie-card {
+  position: relative;
+  width: 180px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.movie-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.carousel-container {
+  width: 100%;
+  background-color: #0a0f29;
+  padding: 40px 0;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-slider {
+  width: 60%; 
+  margin: 0 auto;
+}
+.carousel-slide {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  max-height: 600px;
+  width: 1000px;
+  height: auto;
+  object-fit:fill;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.carousel-caption {
+  margin-top:20px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.movie-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: #0a0f29;
+  color: white;
+}
+
+.detail-poster {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 15px white;
+ 
+}
+
+.detail-info {
+  max-width: 600px;
+}
+
+.detail-info h2 {
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.detail-info p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.loading {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 50px;
+}
+.watchlist-btn {
+  position:absolute;
+  z-index: 10;
+  margin: 6px 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+}
+
+.watchlist-btn:hover {
+  background: white;
+  color: black;
+}
+
+.watchlist-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  z-index: 2;
+}
+
+.watchlist-btn:hover {
+  color: red;
+}
+ 
