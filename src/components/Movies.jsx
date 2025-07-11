@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MovieCard from "./MovieCard";
 import MovieCarousel from "./MovieCarousel";
+const API_KEY = import.meta.env.VITE_API_KEY;
+
+
 
 function Movies({ searchTerm }) {
   const [movies, setMovies] = useState([]);
@@ -16,7 +19,7 @@ function Movies({ searchTerm }) {
         const res = await axios.get(
           `https://www.omdbapi.com/?s=${encodeURIComponent(
             query
-          )}&page=${page}&apikey=3da2af95`
+          )}&page=${page}&apikey=${API_KEY}`
         );
         if (res.data.Search) {
           allMovies.push(...res.data.Search);
